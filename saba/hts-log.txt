@@ -1,0 +1,24 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 11 Nov 2020 12:23:25 at https://sadaafzal.wixsite.com/website +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://sadaafzal.wixsite.com/website -O1 "C:\saba-web1\saba" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:23:44	Error: 	"Not Found" (404) at link https://sadaafzal.wixsite.com/website/decodeURIComponent(e (from https://sadaafzal.wixsite.com/website)
+12:23:44	Error: 	"Not Found" (404) at link https://sadaafzal.wixsite.com/website/wix-thunderbolt/dist/ (from https://sadaafzal.wixsite.com/website)
+12:23:44	Error: 	"Not Found" (404) at link https://sadaafzal.wixsite.com/website/robots.txt (from https://sadaafzal.wixsite.com/website)
+12:23:44	Error: 	"Not Found" (404) at link https://sadaafzal.wixsite.com/website/feed.xml (from https://sadaafzal.wixsite.com/website)
+12:23:44	Error: 	"Not Found" (404) at link https://sadaafzal.wixsite.com/website/$&/ (from https://sadaafzal.wixsite.com/website)
+12:23:44	Error: 	"Forbidden" (403) at link https://sadaafzal.wixsite.com/_partials/ (from https://sadaafzal.wixsite.com/website)
+12:23:44	Error: 	"Not Found" (404) at link https://sadaafzal.wixsite.com/ (from https://sadaafzal.wixsite.com/website)
+12:23:47	Warning: 	Moved Permanently for https://sadaafzal.wixsite.com/website/; $Path=/; XSRF-TOKEN=1605115405|ezLpJ4MZQUy2; $Path=/; hs=-1189025679; $Path=/; $Path=/; SameSite=none; $Path=/
+12:23:47	Warning: 	File has moved from https://sadaafzal.wixsite.com/website/; $Path=/; XSRF-TOKEN=1605115405|ezLpJ4MZQUy2; $Path=/; hs=-1189025679; $Path=/; $Path=/; SameSite=none; $Path=/ to https://sadaafzal.wixsite.com/website/%3B-%24Path%3D/%3B-XSRF-TOKEN%3D1605115405%7CezLpJ4MZQUy2%3B-%24Path%3D/%3B-hs%3D-1189025679%3B-%24Path%3D/%3B-%24Path%3D/%3B-SameSite%3Dnone%3B-%24Path%3D
+12:23:47	Warning: 	Moved Permanently for https://sadaafzal.wixsite.com/website/; $Path=/; $Path=/; SameSite=none; $Path=/
+12:23:47	Warning: 	File has moved from https://sadaafzal.wixsite.com/website/; $Path=/; $Path=/; SameSite=none; $Path=/ to https://sadaafzal.wixsite.com/website/%3B-%24Path%3D/%3B-%24Path%3D/%3B-SameSite%3Dnone%3B-%24Path%3D
+12:23:47	Error: 	"Not Found" (404) at link https://sadaafzal.wixsite.com/website/%3B-%24Path%3D/%3B-XSRF-TOKEN%3D1605115405%7CezLpJ4MZQUy2%3B-%24Path%3D/%3B-hs%3D-1189025679%3B-%24Path%3D/%3B-%24Path%3D/%3B-SameSite%3Dnone%3B-%24Path%3D (from https://sadaafzal.wixsite.com/website/; $Path=/; XSRF-TOKEN=1605115405|ezLpJ4MZQUy2; $Path=/; hs=-1189025679; $Path=/; $Path=/; SameSite=none; $Path=/)
+12:23:47	Error: 	"Not Found" (404) at link https://sadaafzal.wixsite.com/website/%3B-%24Path%3D/%3B-%24Path%3D/%3B-SameSite%3Dnone%3B-%24Path%3D (from https://sadaafzal.wixsite.com/website/; $Path=/; $Path=/; SameSite=none; $Path=/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 22 seconds : 73 links scanned, 61 files written (6671399 bytes overall) [2115967 bytes received at 96180 bytes/sec], 6108905 bytes transferred using HTTP compression in 63 files, ratio 23%, 8.1 requests per connection
+(9 errors, 4 warnings, 0 messages)
