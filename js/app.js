@@ -106,4 +106,42 @@
 function($) {
     "use strict";
     $.Invoza.init();
+
+    $(document).ready(function() {
+
+        $('#submit').click(function (event) {
+            event.preventDefault();
+            var valid = $('#contact-us').valid();
+            console.log(valid);
+            if(valid) {
+                var name = $('#name').val();
+                var email = $('#email').val();
+                var message = $('#message').val();
+
+                var content = {
+                  name: name,
+                  email: email,
+                  message: message
+                };
+
+                $.ajax({
+                    type: 'POST',
+                    url: "http://sfacs.000webhostapp.com/wp-json/shapely/v1/latest-email",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(content),
+                    dataType: 'json',
+                    crossDomain: true
+                }).then(function(data) {
+                    //$('.greeting-id').append(data.id);
+                    //$('.greeting-content').append(data.content);
+                    console.log(data);
+                }).catch(function(error) {
+                    console.log(error);
+                });
+            }
+
+        });
+
+
+    });
 }(window.jQuery);
