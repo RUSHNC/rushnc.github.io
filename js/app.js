@@ -132,7 +132,7 @@ function($) {
                       data: JSON.stringify(content),
                       _jsonp: ''
                     },
-                    "url": "https://sfacs.000webhostapp.com/wp-json/shapely/v1/latest-email",
+                    "url": "//sfacs.000webhostapp.com/wp-json/shapely/v1/latest-email",
                     "method": "GET",
                     "headers": {
                         "accept": "application/javascript",
@@ -145,14 +145,7 @@ function($) {
 
                 });*/
 
-                $.ajax(settings/*{
-                    type: 'POST',
-                    url: "https://sfacs.000webhostapp.com/wp-json/shapely/v1/latest-email",
-                    contentType: "application/json; charset=utf-8",
-                    data: JSON.stringify(content),
-                    dataType: 'json',
-                    crossDomain: true
-                }*/).then(function(data) {
+                $.ajax(settings).then(function(data) {
                     //$('.greeting-id').append(data.id);
                     //$('.greeting-content').append(data.content);
                     console.log(data);
