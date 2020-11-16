@@ -134,7 +134,7 @@ function($) {
                     "url": "https://sfacs.000webhostapp.com/wp-json/shapely/v1/latest-email",
                     "method": "GET",
                     "headers": {
-                        "accept": "application/json",
+                        "accept": "application/javascript",
                         "Access-Control-Allow-Origin":"*"
                     }
                 };
