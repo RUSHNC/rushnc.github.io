@@ -126,7 +126,7 @@ function($) {
 
                 $.ajax({
                     type: 'POST',
-                    url: "//sfacs.000webhostapp.com/wp-json/shapely/v1/latest-email",
+                    url: "https://sfacs.000webhostapp.com/wp-json/shapely/v1/latest-email",
                     contentType: "application/json; charset=utf-8",
                     data: JSON.stringify(content),
                     dataType: 'json',
