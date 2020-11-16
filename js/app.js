@@ -132,6 +132,7 @@ function($) {
                     "crossDomain": true,
                     "url": "https://sfacs.000webhostapp.com/wp-json/shapely/v1/latest-email",
                     "method": "POST",
+                    jsonpCallback: "localJsonpCallback",
                     "headers": {
                         "accept": "application/json",
                         "Access-Control-Allow-Origin":"*"
@@ -160,7 +161,13 @@ function($) {
             }
 
         });
-
+        function localJsonpCallback(json) {
+            if (!json.Error) {
+                console.log(json.status);
+            } else {
+                alert(json.status);
+            }
+        }
 
     });
 }(window.jQuery);
