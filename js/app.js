@@ -123,16 +123,16 @@ function($) {
                   email: email,
                   message: message
                 };
-
                 var settings = {
                     'cache': false,
                     'dataType': "jsonp",
-                    'data': JSON.stringify(content),
                     "async": true,
                     "crossDomain": true,
+                    data : {
+                      data: JSON.stringify(content)
+                    },
                     "url": "https://sfacs.000webhostapp.com/wp-json/shapely/v1/latest-email",
-                    "method": "POST",
-                    jsonpCallback: "localJsonpCallback",
+                    "method": "GET",
                     "headers": {
                         "accept": "application/json",
                         "Access-Control-Allow-Origin":"*"
@@ -159,15 +159,7 @@ function($) {
                     console.log(error);
                 });
             }
-
         });
-        function localJsonpCallback(json) {
-            if (!json.Error) {
-                console.log(json.status);
-            } else {
-                alert(json.status);
-            }
-        }
 
     });
 }(window.jQuery);
