@@ -126,18 +126,13 @@ function($) {
                 var settings = {
                     'cache': false,
                     'dataType': "jsonp",
-                    "async": true,
                     "crossDomain": true,
                     data : {
                       data: JSON.stringify(content),
                       _jsonp: ''
                     },
-                    "url": "//sfacs.000webhostapp.com/wp-json/shapely/v1/latest-email",
-                    "method": "GET",
-                    "headers": {
-                        "accept": "application/javascript",
-                        "Access-Control-Allow-Origin":"*"
-                    }
+                    "url": "https://sfacs.000webhostapp.com/wp-json/shapely/v1/latest-email",
+                    "method": "GET"
                 };
 
 /*                $.ajax(settings).done(function (response) {
