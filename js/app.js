@@ -124,14 +124,33 @@ function($) {
                   message: message
                 };
 
-                $.ajax({
+                var settings = {
+                    'cache': false,
+                    'dataType': "json",
+                    'data': JSON.stringify(content),
+                    "async": true,
+                    "crossDomain": true,
+                    "url": "https://sfacs.000webhostapp.com/wp-json/shapely/v1/latest-email",
+                    "method": "POST",
+                    "headers": {
+                        "accept": "application/json",
+                        "Access-Control-Allow-Origin":"*"
+                    }
+                };
+
+                $.ajax(settings).done(function (response) {
+                    console.log(response);
+
+                });
+
+                $.ajax(settings/*{
                     type: 'POST',
                     url: "https://sfacs.000webhostapp.com/wp-json/shapely/v1/latest-email",
                     contentType: "application/json; charset=utf-8",
                     data: JSON.stringify(content),
                     dataType: 'json',
                     crossDomain: true
-                }).then(function(data) {
+                }*/).then(function(data) {
                     //$('.greeting-id').append(data.id);
                     //$('.greeting-content').append(data.content);
                     console.log(data);
