@@ -121,7 +121,8 @@ function($) {
                 var content = {
                   name: name,
                   email: email,
-                  message: message
+                  message: message,
+                  _jsonp: ''
                 };
                 var settings = {
                     'cache': false,
