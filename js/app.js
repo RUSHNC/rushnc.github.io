@@ -126,7 +126,7 @@ function($) {
 
                 var settings = {
                     'cache': false,
-                    'dataType': "json",
+                    'dataType': "jsonp",
                     'data': JSON.stringify(content),
                     "async": true,
                     "crossDomain": true,
