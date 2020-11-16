@@ -121,8 +121,7 @@ function($) {
                 var content = {
                   name: name,
                   email: email,
-                  message: message,
-                  _jsonp: ''
+                  message: message
                 };
                 var settings = {
                     'cache': false,
@@ -130,7 +129,8 @@ function($) {
                     "async": true,
                     "crossDomain": true,
                     data : {
-                      data: JSON.stringify(content)
+                      data: JSON.stringify(content),
+                      _jsonp: ''
                     },
                     "url": "https://sfacs.000webhostapp.com/wp-json/shapely/v1/latest-email",
                     "method": "GET",
